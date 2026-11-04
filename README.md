@@ -51,6 +51,14 @@ e13 |(S1, S4) |w13 = 20 + (D6 mod 4)| 21
 
 ![Texto Alternativo](parte2.jpeg)
 
-## 3.TAD e algoritmos: implemente em código executável (por exemplo, Python) o TAD Grafo (Aula 01) e os algoritmos de Dijkstra e Prim (Aula 03). O uso assistido de LLM é permitido, desde que acompanhado de auditoria crítica documentada.
+## 4.1  Qual é a distância total mínima (em km) e a sequência exata de subestações de S0 até o seu destino? Liste a ordem cronológica em que os vértices foram definitivamente fechados pelo Dijkstra.
+A distância mínima total para chegar a S7, conforme encontrei é 51km e o caminho é S0 -> S1 -> S3 -> S6 -> S7, conforme achei no teste a mão. 
 
+## 4.2 Simule a queda de uma torre no ramal e5 = (S2, S4), removendo a aresta (w5 = ∞). Determine a nova rota ótima e calcule o acréscimo de custo em km e em percentual.
+Conforme a imagem abaixo, e conforme validado com o orientador durante a atividade, a queda da aresta que liga os vértices S2 e S4 não influencia a rota ótima que encontrei, pois em nenhum momento passo por ela. Isso torna-se notório também na imagem abaixo:
+
+![Texto Alternativo](queda.jpeg)
+
+
+## 3.TAD e algoritmos: implemente em código executável (por exemplo, Python) o TAD Grafo (Aula 01) e os algoritmos de Dijkstra e Prim (Aula 03). O uso assistido de LLM é permitido, desde que acompanhado de auditoria crítica documentada.
 
