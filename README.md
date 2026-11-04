@@ -6,23 +6,16 @@
 
 # Etapas Obrigatórias:
 
-## 1.1 Tabela de pesos do RA: apresente os 6 dígitos do seu RA (D1 a D6), o destino (S6 ou S7) e os 13 pesos calculados. 
+### 1.1: Tabela de pesos do RA: apresente os 6 dígitos do seu RA (D1 a D6), o destino (S6 ou S7) e os 13 pesos calculados. 
 
-D1 = 5
-
-D2 = 1
-
-D3 = 0
-
-D4 = 1
-
-D5 = 7
-
-D6 = 6
-
-Origem = S0
-
-Destino = S7 
+- D1 = 5
+- D2 = 1
+- D3 = 0
+- D4 = 1
+- D5 = 7
+- D6 = 6
+- Origem = S0
+- Destino = S7 
 
 Pesos: 
 
@@ -42,23 +35,25 @@ e11 |(S5, S7) |w11 = 18 + ((D1 + D2) mod 8) | 24
 e12 |(S6, S7) |w12 = 9 + ((D5 + D1) mod 5) | 11
 e13 |(S1, S4) |w13 = 20 + (D6 mod 4)| 21
 
+// **Obs: tirei um tempo para fazer uma revisão rápida antes de enviar e percebi que calculei alguns pessos errados, considerando os valores do meu RA. No entanto, conversando com o orientador no momento da atividade, ele informou que não há problema e que posso considerar os pesos que encontrei, já que o que vale, de fato, é o desenvolvimento e entendimento do algoritmo, e o cálculo individual dos pesos configura apenas uma maneira de garantir que o trabalho de cada aluno seja diferente um do outro.**
 
-## 1,2 e 1.3 e 1.4 Diagrama topológico: desenhe o grafo com os 8 vértices (S0 a S7) e as 13 arestas rotuladas com seus pesos. Matriz de pesos 8×8: construa a grade completa, indexada de S0 a S7 e garanta M[i][j] = M[j][i]. Pares sem conexão direta devem conter explicitamente NULO (ou "—"). 
+### 1,2 e 1.3 e 1.4: Diagrama topológico: desenhe o grafo com os 8 vértices (S0 a S7) e as 13 arestas rotuladas com seus pesos. Matriz de pesos 8×8: construa a grade completa, indexada de S0 a S7 e garanta M[i][j] = M[j][i]. Pares sem conexão direta devem conter explicitamente NULO (ou "—"). 
 
 ![Texto Alternativo](matriz.jpeg)
 
-## 2. Teste de mesa tabular de Dijkstra
+### 2. Teste de mesa tabular de Dijkstra
 
 ![Texto Alternativo](parte2.jpeg)
 
-## 4.1  Qual é a distância total mínima (em km) e a sequência exata de subestações de S0 até o seu destino? Liste a ordem cronológica em que os vértices foram definitivamente fechados pelo Dijkstra.
+### 3.TAD e algoritmos: implemente em código executável (por exemplo, Python) o TAD Grafo (Aula 01) e os algoritmos de Dijkstra e Prim (Aula 03). O uso assistido de LLM é permitido, desde que acompanhado de auditoria crítica documentada.
+
+### 4.1  Qual é a distância total mínima (em km) e a sequência exata de subestações de S0 até o seu destino? Liste a ordem cronológica em que os vértices foram definitivamente fechados pelo Dijkstra.
 A distância mínima total para chegar a S7, conforme encontrei é 51km e o caminho é S0 -> S1 -> S3 -> S6 -> S7, conforme achei no teste a mão. 
 
-## 4.2 Simule a queda de uma torre no ramal e5 = (S2, S4), removendo a aresta (w5 = ∞). Determine a nova rota ótima e calcule o acréscimo de custo em km e em percentual.
+### 4.2 Simule a queda de uma torre no ramal e5 = (S2, S4), removendo a aresta (w5 = ∞). Determine a nova rota ótima e calcule o acréscimo de custo em km e em percentual.
 Conforme a imagem abaixo, e conforme validado com o orientador durante a atividade, a queda da aresta que liga os vértices S2 e S4 não influencia a rota ótima que encontrei, pois em nenhum momento passo por ela. Isso torna-se notório também na imagem abaixo:
 
 ![Texto Alternativo](queda.jpeg)
 
 
-## 3.TAD e algoritmos: implemente em código executável (por exemplo, Python) o TAD Grafo (Aula 01) e os algoritmos de Dijkstra e Prim (Aula 03). O uso assistido de LLM é permitido, desde que acompanhado de auditoria crítica documentada.
 
