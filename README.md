@@ -160,7 +160,7 @@ print("MST?", arestas_dij == arestas_mst)
 A distância mínima total para chegar a S7, conforme encontrei é 48km e o caminho é S0 -> S2 -> S4 -> S7. 
 
 ### 4.2 Simule a queda de uma torre no ramal e5 = (S2, S4), removendo a aresta (w5 = ∞). Determine a nova rota ótima e calcule o acréscimo de custo em km e em percentual.
-51km (acrecsimo de 3km) e o caminho S0 → S1 → S3 → S6 → S7.
+51km (acrecsimo de 3km) e o caminho S0 -> S1 -> S3 -> S6 -> S7.
 
 ![Texto Alternativo](42.jpeg)
 
