@@ -43,10 +43,14 @@ e12 |(S6, S7) |w12 = 9 + ((D5 + D1) mod 5) | 11
 e13 |(S1, S4) |w13 = 20 + (D6 mod 4)| 21
 
 
-## 1.2 Diagrama topológico: desenhe o grafo com os 8 vértices (S0 a S7) e as 13 arestas rotuladas com seus pesos.
+## 1,2 e 1.3 e 1.4 Diagrama topológico: desenhe o grafo com os 8 vértices (S0 a S7) e as 13 arestas rotuladas com seus pesos. Matriz de pesos 8×8: construa a grade completa, indexada de S0 a S7 e garanta M[i][j] = M[j][i]. Pares sem conexão direta devem conter explicitamente NULO (ou "—"). 
 
-## 1.3 e 1.4 Matriz de pesos 8×8: construa a grade completa, indexada de S0 a S7 e garanta M[i][j] = M[j][i]. Pares sem conexão direta devem conter explicitamente NULO (ou "—"). 
+![Texto Alternativo](matriz.jpeg)
 
-| Iter.| u | L[u] | L[S0] | L[S1] | L[S2] | L[S3] | L[S4] | L[S5] | L[S6] | L[S7] | Antecessores atualizados
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
-| Inic | - | - | 0 | ∞ | ∞ | ∞ | ∞ | ∞ | ∞ | ∞ | Inicialização na origem S0 | 
+## 2. Teste de mesa tabular de Dijkstra
+
+![Texto Alternativo](parte2.jpeg)
+
+## 3.TAD e algoritmos: implemente em código executável (por exemplo, Python) o TAD Grafo (Aula 01) e os algoritmos de Dijkstra e Prim (Aula 03). O uso assistido de LLM é permitido, desde que acompanhado de auditoria crítica documentada.
+
+
